@@ -197,7 +197,6 @@ div>
     <div>
       <div style="font-size:12px;font-weight:800;color:#0a1f44;text-transform:uppercase;letter-spacing:0.07em;margin-bottom:8px;padding-bottom:4px;border-bottom:2px solid #D4A017;">Wednesday &ndash; Friday</div>
       <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;">
-        <li style="font-size:13px;color:#3a4660;display:flex;align-items:center;gap:6px;"><span style="color:#CE1126;font-weight:700;">&#8226;</span> Jerk Chicken Sandwich <span style="color:#b08010;font-weight:700;margin-left:4px;">$10 + Pop</span></li>
         <li style="font-size:13px;color:#3a4660;display:flex;align-items:center;gap:6px;"><span style="color:#CE1126;font-weight:700;">&#8226;</span> BBQ Chicken Sandwich <span style="color:#b08010;font-weight:700;margin-left:4px;">$10 + Pop</span></li>
       </ul>
     </div>
@@ -206,214 +205,13 @@ div>
 </div>
 
 <div class="form-card" id="mainCard">
-
-  <!-- Header -->
-  <div class="form-card-top" style="padding:1.2rem 1.8rem;text-align:center;">
-    <p style="font-family:'Playfair Display',serif;font-size:16px;font-weight:900;color:#FAFAF7;margin-bottom:3px;">Menu for this week</p>
-    <p style="font-size:12px;color:#f0c030;font-weight:600;letter-spacing:0.04em;">Saturday, 27th June 2026</p>
-  </div>
-
-  <form id="orderForm" novalidate>
-    <div style="padding:1.8rem;">
-
-      <!-- ===== SECTION 1: TRINBAGO BREAKFAST ===== -->
-      <div class="form-section">
-        <div class="section-title"><span class="section-num">1</span> Trinbago Inspired Breakfast</div>
-        </div>
-        <div class="sandwich-list" id="sandwichList">
-
-          <!-- Bake & Saltfish -->
-          <div class="sandwich-card" data-item="bake-sausages" data-price="10" data-stock="20">
-            <div class="card-header">
-              <div class="card-header-left"><div class="card-select-circle"><div class="card-select-dot"></div></div><div class="card-title-block"><div class="card-item-name">Bake &amp; Sausages</div><div class="card-item-sub">Freshly made bake with saut&eacute;ed sausages</div></div></div>
-              <div class="card-qty"><button type="button" class="qty-btn minus">&#8722;</button><span class="qty-num">1</span><button type="button" class="qty-btn plus">+</button><span class="remaining-tag"></span></div>
-              <div class="card-price">$10</div>
-            </div>
-            <div class="card-body">
-              <div class="step-label">Add-ons <span style="font-weight:400;color:#5a6680;">(optional)</span></div>
-              <div class="addon-inline" style="margin-bottom:12px;">
-                <div class="addon-chip" data-addon="Pineapple"><div class="addon-chip-dot"></div>Pineapple</div>
-                <div class="addon-chip" data-addon="Green Salad"><div class="addon-chip-dot"></div>Green Salad</div>
-              </div>
-              <div class="card-divider"></div>
-              <div class="step-label">Sauces <span style="font-weight:400;color:#5a6680;">(optional &mdash; up to 5)</span></div>
-            <div class="sauce-optional-note">Leave all unselected if you prefer no sauce.</div>
-            <div class="sauce-count-line">Selected: <span class="sc-num">0</span> / 5 <span class="sc-dots"><span class="sc-dot"></span><span class="sc-dot"></span><span class="sc-dot"></span><span class="sc-dot"></span><span class="sc-dot"></span></span></div>
-            <div class="sauce-mini-grid">
-              <div class="sauce-chip" data-sauce="Ketchup"><div class="sc-box"><span class="sc-tick">&#10003;</span></div><span class="sc-label">Ketchup</span></div>
-              <div class="sauce-chip" data-sauce="Mustard"><div class="sc-box"><span class="sc-tick">&#10003;</span></div><span class="sc-label">Mustard</span></div>
-              <div class="sauce-chip" data-sauce="Pepper Sauce"><div class="sc-box"><span class="sc-tick">&#10003;</span></div><span class="sc-label">Pepper Sauce <span class="spice-tag">&#127798;&#127798; hot</span></span></div>
-              <div class="sauce-chip" data-sauce="Tamarind"><div class="sc-box"><span class="sc-tick">&#10003;</span></div><span class="sc-label">Tamarind</span></div>
-              <div class="sauce-chip" data-sauce="Chadon Beni"><div class="sc-box"><span class="sc-tick">&#10003;</span></div><span class="sc-label">Chadon Beni</span></div>
-              <div class="sauce-chip" data-sauce="Garlic Sauce"><div class="sc-box"><span class="sc-tick">&#10003;</span></div><span class="sc-label">Garlic Sauce</span></div>
-              <div class="sauce-chip" data-sauce="Bar-B-Que"><div class="sc-box"><span class="sc-tick">&#10003;</span></div><span class="sc-label">Bar-B-Que</span></div>
-            </div>
-            <div class="sauce-limit-note">Max 5 sauces &mdash; deselect one to choose another.</div>
-            <div class="pepper-heat-inline" style="display:none;"><div class="pepper-heat-title">How hot would you like your Pepper Sauce?</div><div class="pepper-heat-btns"><button type="button" class="heat-btn" data-heat="Mild">&#127798; Mild</button><button type="button" class="heat-btn" data-heat="Moderate">&#127798;&#127798; Moderate</button><button type="button" class="heat-btn" data-heat="Hot">&#127798;&#127798;&#127798; Hot</button></div></div>
-            </div>
-          </div>
-
-          <!-- Bake & Shark -->
-          <div class="sandwich-card" data-item="bake-shark" data-price="12" data-stock="20">
-            <div class="card-header">
-              <div class="card-header-left"><div class="card-select-circle"><div class="card-select-dot"></div></div><div class="card-title-block"><div class="card-item-name">Bake &amp; Shark</div><div class="card-item-sub">Substitute fish if Shark is unavailable</div></div></div>
-              <div class="card-qty"><button type="button" class="qty-btn minus">&#8722;</button><span class="qty-num">1</span><button type="button" class="qty-btn plus">+</button><span class="remaining-tag"></span></div>
-              <div class="card-price">$12</div>
-            </div>
-            <div class="card-body">
-              <div class="step-label">Add-ons <span style="font-weight:400;color:#5a6680;">(optional)</span></div>
-              <div class="addon-inline" style="margin-bottom:12px;">
-                <div class="addon-chip" data-addon="Pineapple"><div class="addon-chip-dot"></div>Pineapple</div>
-                <div class="addon-chip" data-addon="Green Salad"><div class="addon-chip-dot"></div>Green Salad</div>
-              </div>
-              <div class="card-divider"></div>
-              <div class="step-label">Sauces <span style="font-weight:400;color:#5a6680;">(optional &mdash; up to 5)</span></div>
-            <div class="sauce-optional-note">Leave all unselected if you prefer no sauce.</div>
-            <div class="sauce-count-line">Selected: <span class="sc-num">0</span> / 5 <span class="sc-dots"><span class="sc-dot"></span><span class="sc-dot"></span><span class="sc-dot"></span><span class="sc-dot"></span><span class="sc-dot"></span></span></div>
-            <div class="sauce-mini-grid">
-              <div class="sauce-chip" data-sauce="Ketchup"><div class="sc-box"><span class="sc-tick">&#10003;</span></div><span class="sc-label">Ketchup</span></div>
-              <div class="sauce-chip" data-sauce="Mustard"><div class="sc-box"><span class="sc-tick">&#10003;</span></div><span class="sc-label">Mustard</span></div>
-              <div class="sauce-chip" data-sauce="Pepper Sauce"><div class="sc-box"><span class="sc-tick">&#10003;</span></div><span class="sc-label">Pepper Sauce <span class="spice-tag">&#127798;&#127798; hot</span></span></div>
-              <div class="sauce-chip" data-sauce="Tamarind"><div class="sc-box"><span class="sc-tick">&#10003;</span></div><span class="sc-label">Tamarind</span></div>
-              <div class="sauce-chip" data-sauce="Chadon Beni"><div class="sc-box"><span class="sc-tick">&#10003;</span></div><span class="sc-label">Chadon Beni</span></div>
-              <div class="sauce-chip" data-sauce="Garlic Sauce"><div class="sc-box"><span class="sc-tick">&#10003;</span></div><span class="sc-label">Garlic Sauce</span></div>
-              <div class="sauce-chip" data-sauce="Bar-B-Que"><div class="sc-box"><span class="sc-tick">&#10003;</span></div><span class="sc-label">Bar-B-Que</span></div>
-            </div>
-            <div class="sauce-limit-note">Max 5 sauces &mdash; deselect one to choose another.</div>
-            <div class="pepper-heat-inline" style="display:none;"><div class="pepper-heat-title">How hot would you like your Pepper Sauce?</div><div class="pepper-heat-btns"><button type="button" class="heat-btn" data-heat="Mild">&#127798; Mild</button><button type="button" class="heat-btn" data-heat="Moderate">&#127798;&#127798; Moderate</button><button type="button" class="heat-btn" data-heat="Hot">&#127798;&#127798;&#127798; Hot</button></div></div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="error-msg" id="fillingsError">Please select at least one item to order.</div>
-      </div>
-
-      <hr class="menu-divider"/>
-
-      <!-- ===== SECTION 2: SATURDAY LUNCH SPECIAL ===== -->
-      <div class="form-section">
-        <div class="section-title"><span class="section-num">2</span> Saturday Lunch Special</div>
-
-        <div class="sandwich-card" data-item="lunch-special" data-price="18" data-stock="20">
-          <div class="card-header">
-            <div class="card-header-left"><div class="card-select-circle"><div class="card-select-dot"></div></div><div class="card-title-block"><div class="card-item-name">Saturday Lunch Plate</div><div class="card-item-sub">Fried Rice + Green Salad + your choices below</div></div></div>
-            <div class="card-qty"><button type="button" class="qty-btn minus">&#8722;</button><span class="qty-num">1</span><button type="button" class="qty-btn plus">+</button><span class="remaining-tag"></span></div>
-            <div class="card-price">$18</div>
-          </div>
-          <div class="card-body" style="display:block;">
-
-            <!-- Choice: Mac Pie or Mac Salad -->
-            <div class="step-label">Pasta <span style="font-weight:400;color:#5a6680;">(choose one)</span></div>
-            <div class="lunch-addon-choice" style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;" id="pastaChoice">
-              <div class="lunch-choice-chip" data-addon="Macaroni Pie" style="display:flex;align-items:center;gap:6px;padding:7px 14px;border:2px solid #c8d0e0;border-radius:20px;background:#fff;cursor:pointer;font-size:12px;font-weight:600;color:#0a1f44;user-select:none;transition:all 0.15s;">
-                <div class="lunch-choice-dot" style="width:10px;height:10px;border-radius:50%;border:2px solid #c8d0e0;flex-shrink:0;transition:all 0.15s;"></div>Macaroni Pie
-              </div>
-              <div class="lunch-choice-chip" data-addon="Macaroni Salad" style="display:flex;align-items:center;gap:6px;padding:7px 14px;border:2px solid #c8d0e0;border-radius:20px;background:#fff;cursor:pointer;font-size:12px;font-weight:600;color:#0a1f44;user-select:none;transition:all 0.15s;">
-                <div class="lunch-choice-dot" style="width:10px;height:10px;border-radius:50%;border:2px solid #c8d0e0;flex-shrink:0;transition:all 0.15s;"></div>Macaroni Salad
-              </div>
-            </div>
-
-            <!-- Choice: Protein -->
-            <div class="step-label">Protein <span style="font-weight:400;color:#5a6680;">(choose one)</span></div>
-            <div class="lunch-addon-choice" style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;" id="proteinChoice">
-              <div class="lunch-choice-chip" data-addon="Oven BBQ Chicken" style="display:flex;align-items:center;gap:6px;padding:7px 14px;border:2px solid #c8d0e0;border-radius:20px;background:#fff;cursor:pointer;font-size:12px;font-weight:600;color:#0a1f44;user-select:none;transition:all 0.15s;">
-                <div class="lunch-choice-dot" style="width:10px;height:10px;border-radius:50%;border:2px solid #c8d0e0;flex-shrink:0;transition:all 0.15s;"></div>Oven Bar-B-Que Chicken
-              </div>
-              <div class="lunch-choice-chip" data-addon="Fried King Fish" style="display:flex;align-items:center;gap:6px;padding:7px 14px;border:2px solid #c8d0e0;border-radius:20px;background:#fff;cursor:pointer;font-size:12px;font-weight:600;color:#0a1f44;user-select:none;transition:all 0.15s;">
-                <div class="lunch-choice-dot" style="width:10px;height:10px;border-radius:50%;border:2px solid #c8d0e0;flex-shrink:0;transition:all 0.15s;"></div>Fried King Fish Slice
-              </div>
-            </div>
-
-            <div class="card-divider"></div>
-            <div class="step-label">Sauces <span style="font-weight:400;color:#5a6680;">(optional &mdash; up to 5)</span></div>
-            <div class="sauce-optional-note">Leave all unselected if you prefer no sauce.</div>
-            <div class="sauce-count-line">Selected: <span class="sc-num">0</span> / 5 <span class="sc-dots"><span class="sc-dot"></span><span class="sc-dot"></span><span class="sc-dot"></span><span class="sc-dot"></span><span class="sc-dot"></span></span></div>
-            <div class="sauce-mini-grid">
-              <div class="sauce-chip" data-sauce="Ketchup"><div class="sc-box"><span class="sc-tick">&#10003;</span></div><span class="sc-label">Ketchup</span></div>
-              <div class="sauce-chip" data-sauce="Mustard"><div class="sc-box"><span class="sc-tick">&#10003;</span></div><span class="sc-label">Mustard</span></div>
-              <div class="sauce-chip" data-sauce="Pepper Sauce"><div class="sc-box"><span class="sc-tick">&#10003;</span></div><span class="sc-label">Pepper Sauce <span class="spice-tag">&#127798;&#127798; hot</span></span></div>
-              <div class="sauce-chip" data-sauce="Tamarind"><div class="sc-box"><span class="sc-tick">&#10003;</span></div><span class="sc-label">Tamarind</span></div>
-              <div class="sauce-chip" data-sauce="Chadon Beni"><div class="sc-box"><span class="sc-tick">&#10003;</span></div><span class="sc-label">Chadon Beni</span></div>
-              <div class="sauce-chip" data-sauce="Garlic Sauce"><div class="sc-box"><span class="sc-tick">&#10003;</span></div><span class="sc-label">Garlic Sauce</span></div>
-              <div class="sauce-chip" data-sauce="Bar-B-Que"><div class="sc-box"><span class="sc-tick">&#10003;</span></div><span class="sc-label">Bar-B-Que</span></div>
-            </div>
-            <div class="sauce-limit-note">Max 5 sauces &mdash; deselect one to choose another.</div>
-            <div class="pepper-heat-inline" style="display:none;"><div class="pepper-heat-title">How hot would you like your Pepper Sauce?</div><div class="pepper-heat-btns"><button type="button" class="heat-btn" data-heat="Mild">&#127798; Mild</button><button type="button" class="heat-btn" data-heat="Moderate">&#127798;&#127798; Moderate</button><button type="button" class="heat-btn" data-heat="Hot">&#127798;&#127798;&#127798; Hot</button></div></div>
-
-          </div>
-        </div>
-
-      </div>
-
-      <hr class="menu-divider"/>
-
-      <!-- ===== SECTION 3: PICKUP TIME ===== -->
-      <div class="form-section">
-        <div class="section-title"><span class="section-num">3</span> Pickup Time</div>
-        <div class="field-row">
-          <label for="pickupTime">Pickup Time <span class="required">*</span></label>
-          <select id="pickupTime" required>
-            <option value="">&#8212; Select a time &#8212;</option>
-            <option>10:30 AM</option><option>11:00 AM</option><option>11:30 AM</option>
-            <option>12:00 PM (Noon)</option><option>12:30 PM</option>
-            <option>1:00 PM</option><option>1:30 PM</option><option>2:00 PM</option>
-          </select>
-          <div class="error-msg" id="timeError">Please select a pickup time.</div>
-        </div>
-      </div>
-
-      <!-- ===== SECTION 4: CONTACT ===== -->
-      <div class="form-section">
-        <div class="section-title"><span class="section-num">4</span> Your Details</div>
-        <div class="contact-flex">
-          <div class="field-row">
-            <label for="custName">Name <span class="required">*</span></label>
-            <input type="text" id="custName" placeholder="First &amp; Last name" required/>
-            <div class="error-msg" id="nameError">Please enter your name.</div>
-          </div>
-          <div class="field-row">
-            <label for="custEmail">Email</label>
-            <input type="email" id="custEmail" placeholder="you@example.com"/>
-            <div class="field-hint">At least one of email or phone required</div>
-          </div>
-          <div class="field-row">
-            <label for="custPhone">Phone</label>
-            <input type="tel" id="custPhone" placeholder="+1 (416) 555-0000"/>
-          </div>
-        </div>
-        <div class="field-row" style="margin-top:0.5rem">
-          <label for="custNotes">Notes / Requests</label>
-          <textarea id="custNotes" rows="2" placeholder="Any allergies, extra requests..."></textarea>
-        </div>
-        <div class="error-msg" id="contactError">Please provide an email or phone number.</div>
-      </div>
-
-      <div class="order-summary" id="orderSummary" style="display:none">
-        <div class="summary-title">Order Summary</div>
-        <div id="summaryLines"></div>
-        <div class="summary-row summary-total"><span>Total</span><span id="summaryTotal">$0</span></div>
-      </div>
-
-      <button type="submit" class="submit-btn" id="submitBtn">
-        <div class="btn-stripe"></div>Place My Pre-Order &#8594;
-      </button>
-      <p style="font-size:11.5px;color:#5a6680;text-align:center;margin-top:12px;line-height:1.5">
-        Pre-Orders accepted until 6:00 PM Friday. Payment due at pickup.<br>
-        Questions? Call <strong style="color:#0a1f44">905-427-3003</strong>
-      </p>
-
-    </div>
-  </form>
-
-  <div class="success-screen" id="successScreen">
-    <div class="checkmark">&#10003;</div>
-    <h2>Order Received!</h2>
-    <p id="successMsg">Thank you! Your order is confirmed.</p>
-    <div style="margin-top:1.5rem;font-size:13px;color:#5a6680">Questions? Call <strong style="color:#0a1f44">905-427-3003</strong></div>
+  <div class="form-card-top" style="text-align:center;padding:1.6rem 1.8rem;">
+    <p style="text-align:center;font-family:'Playfair Display',serif;font-size:18px;font-weight:900;color:#FAFAF7;margin:0;"><span class="pulse-dot" style="margin-right:8px;"></span>This week&rsquo;s menu is loading&hellip;</p>
   </div>
 </div>
-<script>
+
+<script>if(document.getElementById('orderForm')){
+
 /* ===== DATA ===== */
 var ITEM_MAX=20, MEAL_PRICE=15;
 var itemPrices={'bake-sausages':10,'bake-shark':12,'lunch-special':18};
@@ -1093,6 +891,7 @@ refreshMealUI();
   // No pre-activation needed
   renderSummary();
 })();
-</script>
+
+}</script>
 </body>
 </html>
